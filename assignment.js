@@ -1,4 +1,4 @@
-
+//https://github.com/sahidulcse12/assignment
 
 //convert kilometer to meter//
 
@@ -14,12 +14,17 @@ function kilometerToMeter(kilometer) {
 //calculate budget cost//
 
 function budgetCalculator(watch, phone, laptop) {
-    var priceOfWatch = watch * 50;
-    var priceOfPhone = phone * 100;
-    var priceOfLaptop = laptop * 500
 
-    var totalPrices = priceOfWatch + priceOfPhone + priceOfLaptop;
-    return totalPrices;
+    if (watch > 0 && phone > 0 && laptop > 0) {
+        var priceOfWatch = watch * 50;
+        var priceOfPhone = phone * 100;
+        var priceOfLaptop = laptop * 500
+
+        var totalPrices = priceOfWatch + priceOfPhone + priceOfLaptop;
+        return totalPrices;
+    }else{
+        return "You should give integer value";
+    }
 }
 
 
@@ -55,31 +60,31 @@ function hotelCost(days) {
 
 // find the largest name//
 
-function findLongestName(str) {
-    var longestWord = [];
+function megaFriend(friendsName) {
+    var longestName = [];
     var large = 0;
-    if (str.length != 0) {
-        for (var i = 0; i < str.length; i++) {
-            if (str[i].length > large) {
-                large = str[i].length;
-                var longestWord = str[i];
+    if (friendsName.length != 0) {
+        for (var i = 0; i < friendsName.length; i++) {
+            if (friendsName[i].length > large) {
+                large = friendsName[i].length;
+                var longestName = friendsName[i];
             }
         }
-        return longestWord;
-    }else{
+        return longestName;
+    } else {
         return "String is empty";
     }
 }
 
 
-var resultOfMeter = kilometerToMeter(-2);
+var resultOfMeter = kilometerToMeter(-2);  //kilometerToMeter
 console.log(resultOfMeter);
 
-var resultOfBudget = budgetCalculator(2,3,4);
+var resultOfBudget = budgetCalculator(2, 3, 4);  //budgetCalculator
 console.log(resultOfBudget);
 
-var resultForHotelCost = hotelCost(-2);
+var resultForHotelCost = hotelCost(-2);  //hotelCost
 console.log(resultForHotelCost);
 
-var result = findLongestName(["jubayer", "muhit", "sahidul islam", "alamin ahmed kakon"]);
+var result = megaFriend(["jubayer", "muhit", "sahidul islam", "alamin"]);  //megaFriend
 console.log(result);
