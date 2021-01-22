@@ -1,6 +1,6 @@
 
 
-//convert kilomiter to meter//
+//convert kilometer to meter//
 
 function kilometerToMeter(kilometer) {
     if (kilometer >= 1) {
@@ -11,7 +11,7 @@ function kilometerToMeter(kilometer) {
 }
 
 
-//calculate bydget cost//
+//calculate budget cost//
 
 function budgetCalculator(watch, phone, laptop) {
     var priceOfWatch = watch * 50;
